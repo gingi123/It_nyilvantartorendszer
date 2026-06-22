@@ -1,0 +1,53 @@
+/* AdminDevice.css */
+.container {
+    padding: 20px;
+    overflow-x: auto; /* horizontális scroll, ha túl széles a táblázat */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+thead {
+    background-color: #1e40af; /* kék fejlécek */
+    color: #fff;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f5f5; /* sávos színek */
+}
+
+tbody tr:hover {
+    background-color: #e0e7ff; /* hover hatás */
+}
+
+th {
+    font-weight: bold;
+}
+
+td {
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    th, td {
+        padding: 8px 10px;
+    }
+}
+
+
+.controls select {
+    min-width: 60px; /* alapméret, ami szélesebb lesz */
+    padding: 4px 6px; /* kényelmesebb kattintás */
+    font-size: 14px;  /* nagyobb szöveg */
+}

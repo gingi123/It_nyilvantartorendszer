@@ -1,0 +1,1553 @@
+{
+  "info": {
+    "_postman_id": "16473fdb-8428-4cda-8361-42fa3e697d5d",
+    "name": "Vizsgaremek",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "47301888",
+    "_collection_link": "https://go.postman.co/collection/47301888-16473fdb-8428-4cda-8361-42fa3e697d5d?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Assignment",
+      "item": [
+        {
+          "name": "AssignmentAdmin - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{url}}Assignment/",
+              "host": [
+                "{{url}}Assignment"
+              ],
+              "path": [
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "AssignmentUser - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{url}}Assignment/my",
+              "host": [
+                "{{url}}Assignment"
+              ],
+              "path": [
+                "my"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Assignment - POST",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"userId\": 1,\r\n    \"deviceId\": 10\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}Assignment/",
+              "host": [
+                "{{url}}Assignment"
+              ],
+              "path": [
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "AssignmentAdminOne - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}Assignment/71",
+              "host": [
+                "{{url}}Assignment"
+              ],
+              "path": [
+                "71"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "AssignmentUSerOne - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}Assignment/my/70",
+              "host": [
+                "{{url}}Assignment"
+              ],
+              "path": [
+                "my",
+                "70"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "AssignmentAdminReturn - PATCH",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "{{url}}Assignment/71/return",
+              "host": [
+                "{{url}}Assignment"
+              ],
+              "path": [
+                "71",
+                "return"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "AssignmentAdminEdit - PATCH",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"userId\": 2,\r\n    \"deviceId\": 10\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}Assignment/70/edit",
+              "host": [
+                "{{url}}Assignment"
+              ],
+              "path": [
+                "70",
+                "edit"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "AssignmentsAdminLast5 - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}Assignment/last-five-assignments",
+              "host": [
+                "{{url}}Assignment"
+              ],
+              "path": [
+                "last-five-assignments"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "AssignmentsUserLast5 - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}Assignment/my/last-five-assignments",
+              "host": [
+                "{{url}}Assignment"
+              ],
+              "path": [
+                "my",
+                "last-five-assignments"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "AssignmentAdminDelete - DELETE",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{url}}Assignment/25/delete",
+              "host": [
+                "{{url}}Assignment"
+              ],
+              "path": [
+                "25",
+                "delete"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Admin - login",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {}
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"username\": \"admin.istvan\",\r\n  \"password\": \"istvan\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}Auth/login",
+              "host": [
+                "{{url}}Auth"
+              ],
+              "path": [
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "User - login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"username\": \"user.david\",\r\n  \"password\": \"david\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}Auth/login",
+              "host": [
+                "{{url}}Auth"
+              ],
+              "path": [
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Invalid login",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"username\": \"user.invalid\",\r\n  \"password\": \"invalid\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}Auth/login",
+              "host": [
+                "{{url}}Auth"
+              ],
+              "path": [
+                "login"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Device",
+      "item": [
+        {
+          "name": "DeviceAdminAll - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}Device",
+              "host": [
+                "{{url}}Device"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeviceUserAll - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}Device/my",
+              "host": [
+                "{{url}}Device"
+              ],
+              "path": [
+                "my"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeviceAdminOne -GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}Device/1",
+              "host": [
+                "{{url}}Device"
+              ],
+              "path": [
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeviceUserOne - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}Device/5",
+              "host": [
+                "{{url}}Device"
+              ],
+              "path": [
+                "5"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeviceAdminPost - POST",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"deviceTypeId\": 1,\r\n  \"manufacturer\": \"Dell\",\r\n  \"model\": \"Vostro\",\r\n  \"serialNumber\": \"SN-LAP-000000\",\r\n  \"inventoryNumber\": \"INV-0000000\",\r\n  \"status\": \"available\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}Device",
+              "host": [
+                "{{url}}Device"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeviceAdminPut - PUT",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"deviceTypeId\": 1,\r\n  \"manufacturer\": \"Dell\",\r\n  \"model\": \"Vostro\",\r\n  \"serialNumber\": \"SN-LAP-000000\",\r\n  \"inventoryNumber\": \"INV-0000000\",\r\n  \"status\": \"available\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}Device/1",
+              "host": [
+                "{{url}}Device"
+              ],
+              "path": [
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeviceAdminDelete- DELETE",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{url}}Device/1",
+              "host": [
+                "{{url}}Device"
+              ],
+              "path": [
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeviceAdminFiles - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}Device/1/files",
+              "host": [
+                "{{url}}Device"
+              ],
+              "path": [
+                "1",
+                "files"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeviceAdminP2P - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}Device/page-to-page",
+              "host": [
+                "{{url}}Device"
+              ],
+              "path": [
+                "page-to-page"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeviceAdminFileDelete - DELETE",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{url}}Device/files/1",
+              "host": [
+                "{{url}}Device"
+              ],
+              "path": [
+                "files",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeviceAdminSearch - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}Device/device-search?search=lenovo",
+              "host": [
+                "{{url}}Device"
+              ],
+              "path": [
+                "device-search"
+              ],
+              "query": [
+                {
+                  "key": "search",
+                  "value": "lenovo"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "DeviceFile",
+      "item": [
+        {
+          "name": "DeviceFileAdminUpload - POST",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{url}}DeviceFile/upload",
+              "host": [
+                "{{url}}DeviceFile"
+              ],
+              "path": [
+                "upload"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeviceFileAdminFileDelete - DELETE",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{url}}DeviceFile/12/invoice",
+              "host": [
+                "{{url}}DeviceFile"
+              ],
+              "path": [
+                "12",
+                "invoice"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "DeviceType",
+      "item": [
+        {
+          "name": "DeviceTypeAdminAll - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}DeviceType",
+              "host": [
+                "{{url}}DeviceType"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeviceTypeAdminNew - POST",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Töltő\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}DeviceType",
+              "host": [
+                "{{url}}DeviceType"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeviceTypeAdminEdit - PUT",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Töltő2\"\r\n}"
+            },
+            "url": {
+              "raw": "{{url}}DeviceType/7",
+              "host": [
+                "{{url}}DeviceType"
+              ],
+              "path": [
+                "7"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeviceTypeAdminDelete - DELETE",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{url}}DeviceType/7",
+              "host": [
+                "{{url}}DeviceType"
+              ],
+              "path": [
+                "7"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Report",
+      "item": [
+        {
+          "name": "ReportAdminStatusSummary - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}Report/status-summary",
+              "host": [
+                "{{url}}Report"
+              ],
+              "path": [
+                "status-summary"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReportAdminByType - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}Report/by-type",
+              "host": [
+                "{{url}}Report"
+              ],
+              "path": [
+                "by-type"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReportAdminByStatus - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}Report/by-status",
+              "host": [
+                "{{url}}Report"
+              ],
+              "path": [
+                "by-status"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReportAdminByUser - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}Report/by-user",
+              "host": [
+                "{{url}}Report"
+              ],
+              "path": [
+                "by-user"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReportAdminByDirection - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}Report/by-direction",
+              "host": [
+                "{{url}}Report"
+              ],
+              "path": [
+                "by-direction"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReportUserTypeSummary - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}Report/me/device-type-summary",
+              "host": [
+                "{{url}}Report"
+              ],
+              "path": [
+                "me",
+                "device-type-summary"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReportUserTypeReport - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}Report/me/device-type-report",
+              "host": [
+                "{{url}}Report"
+              ],
+              "path": [
+                "me",
+                "device-type-report"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReportUserManufacturerReport - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}Report/me/device-manufacturer-report",
+              "host": [
+                "{{url}}Report"
+              ],
+              "path": [
+                "me",
+                "device-manufacturer-report"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReportUserAssignmentTypeReport - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}Report/me/assignment-device-type-report",
+              "host": [
+                "{{url}}Report"
+              ],
+              "path": [
+                "me",
+                "assignment-device-type-report"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReportUserAssignmentDirectionReport - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}Report/me/assignment-direction-type-report",
+              "host": [
+                "{{url}}Report"
+              ],
+              "path": [
+                "me",
+                "assignment-direction-type-report"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "User",
+      "item": [
+        {
+          "name": "UserAdminAll - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}User",
+              "host": [
+                "{{url}}User"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UserAdminOne - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}User/1",
+              "host": [
+                "{{url}}User"
+              ],
+              "path": [
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UserAdminEdit - PUT",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\": \"admin.nikolett\",\r\n    \"email\": \"nikolett.bedocs@pelda.hu\",\r\n    \"firstName\": \"Nikolett\",\r\n    \"lastName\": \"Példa\",\r\n    \"role\": \"admin\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}User/10",
+              "host": [
+                "{{url}}User"
+              ],
+              "path": [
+                "10"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UserAdminDelete - DELETE",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{url}}User/1",
+              "host": [
+                "{{url}}User"
+              ],
+              "path": [
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UserAdminNew - POST",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\": \"user.nikolett\",\r\n    \"passwordhash\": \"123qweASD\",\r\n    \"email\": \"nikolett.bedocs@pelda.hu\",\r\n    \"firstname\": \"Nikolett\",\r\n    \"lastname\": \"Példa\",\r\n    \"role\": \"user\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}User/new-user",
+              "host": [
+                "{{url}}User"
+              ],
+              "path": [
+                "new-user"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UserME - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}User/me",
+              "host": [
+                "{{url}}User"
+              ],
+              "path": [
+                "me"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UserPasswordChange - PATCH",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"currentPassword\": \"regiJelszo123\",\r\n  \"newPassword\": \"ujJelszo456\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}User/me/password",
+              "host": [
+                "{{url}}User"
+              ],
+              "path": [
+                "me",
+                "password"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UserAdminSearch - GET",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}User/search-user?search=kov",
+              "host": [
+                "{{url}}User"
+              ],
+              "path": [
+                "search-user"
+              ],
+              "query": [
+                {
+                  "key": "search",
+                  "value": "kov"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UserAdminP2P - GET",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{adminToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\": \"user.nikolett\",\r\n    \"passwordhash\": \"123qweASD\",\r\n    \"email\": \"nikolett.bedocs@pelda.hu\",\r\n    \"firstname\": \"Nikolett\",\r\n    \"lastname\": \"Példa\",\r\n    \"role\": \"user\"\r\n}"
+            },
+            "url": {
+              "raw": "{{url}}User/page-to-page?page-to-page?page=2&count=20&orderBy=lastname&orderDir=asc",
+              "host": [
+                "{{url}}User"
+              ],
+              "path": [
+                "page-to-page"
+              ],
+              "query": [
+                {
+                  "key": "page-to-page?page",
+                  "value": "2"
+                },
+                {
+                  "key": "count",
+                  "value": "20"
+                },
+                {
+                  "key": "orderBy",
+                  "value": "lastname"
+                },
+                {
+                  "key": "orderDir",
+                  "value": "asc"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "url",
+      "value": ""
+    },
+    {
+      "key": "adminToken",
+      "value": ""
+    },
+    {
+      "key": "userToken",
+      "value": ""
+    }
+  ]
+}
