@@ -2,7 +2,7 @@
 Téma: Jedlik 14KE IT eszköz nyilvántartó repository
 
 ## Alapadatok
-- **Csapattagok:** Lukács Gábor, Takács Gábor, Tóth Krisztián
+- **Csapattagok:**  Takács Gábor, Tóth Krisztián
 - **Osztály:** 14KE
 - **Konzulens:** Balogh Bence
 - **Tanév:** 2025/2026  
