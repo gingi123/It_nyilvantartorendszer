@@ -2,9 +2,6 @@
 Téma: Jedlik 14KE IT eszköz nyilvántartó repository
 
 ## Alapadatok
-- **Csapattagok:**  Takács Gábor, Tóth Krisztián
-- **Osztály:** 14KE
-- **Konzulens:** Balogh Bence
 - **Tanév:** 2025/2026  
 - **Projekt típusa:** Szoftverfejlesztő és -tesztelő vizsgaremek  
 - **Backend:** ASP.NET Core (.NET 8)
